@@ -1,0 +1,15 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.footer-nav {
+  &__link {
+    display: block;
+    color: $white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    @include mix.hover(color, 0.3s, ease-in-out) {
+      color: $primary;
+    }
+  }
+}

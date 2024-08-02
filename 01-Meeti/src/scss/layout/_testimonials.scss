@@ -1,0 +1,9 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.testimonials {
+  &__heading {
+    @include mix.headingBorder($secondary, $primary);
+  }
+}
+

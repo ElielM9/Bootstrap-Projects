@@ -1,0 +1,31 @@
+@use "config/mixins" as mix;
+@use "vendors/bootstrap" as *;
+
+.site-header__btn {
+  display: block;
+  margin-top: 2rem;
+  font-weight: 700;
+  text-align: center;
+  @include button-variant(
+    $primary,
+    transparent,
+    $secondary,
+    darken($primary, 10%),
+    transparent,
+    darken($secondary, 10%)
+  );
+  @include button-size(1rem, 5rem, 2rem, 1rem);
+
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+  }
+}
+
+.plan-card__btn {
+  @extend .site-header__btn;
+  border: 0.1rem solid $white;
+  
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}

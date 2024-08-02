@@ -1,0 +1,37 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.site-header {
+  @include mix.bgImage($secondary, "header.jpg");
+
+  .logo {
+    max-width: 15rem;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    padding: 10rem 0;
+
+    @include media-breakpoint-up(md) {
+      max-width: 50%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 40%;
+    }
+  }
+
+  &__heading {
+    font-size: 4.5rem;
+    color: $white;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 6rem;
+    }
+  }
+}

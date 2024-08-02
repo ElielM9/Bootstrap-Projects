@@ -1,0 +1,8 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.create-podcast {
+  &__heading {
+    @include mix.headingBorder($secondary, $primary);
+  }
+}

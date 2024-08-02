@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PodcastApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header py-3">
+      <div class="container-xl">
+        <div class="logo">
+          <img src="./assets/img/icons/logo.svg" alt="PodcastApp" />
+        </div>
+        <div class="site-header__content">
+          <h1 class="text-center text-md-start site-header__heading">
+            La plataforma para publicar podcast
+          </h1>
+          <a class="btn site-header__btn" href="#">Crear cuenta</a>
+        </div>
+      </div>
+    </header>
+    <section class="container-xl py-4 create-podcast">
+      <div class="row align-items-center">
+        <picture class="col-md-6">
+          <img
+            loading="lazy"
+            width="500"
+            height="300"
+            src="./assets/img/backgrounds/imagen_podcast.svg"
+            alt="imagen podcast"
+          />
+        </picture>
+        <div class="col-md-6 mt-1 mt-md-0">
+          <h2 class="create-podcast__heading">Crea tu podcast</h2>
+          <p class="mt-1">
+            PodcastApp te permite crear, editar, y distribuir tus podcasts de
+            forma sencilla y eficiente. Crea tu canal, agrega tus episodios,
+            establece un calendario y publica tus podcasts en redes sociales.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="benefists bg-primary py-4">
+      <div class="container-xl">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <h2 class="benefists__heading">Llega a miles y gana dinero</h2>
+            <p class="mt-1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quos
+              harum possimus eveniet, expedita et assumenda magni voluptates
+              doloribus hic ea voluptas nihil at rerum exercitationem vel?
+              Aperiam, itaque veniam.
+            </p>
+          </div>
+          <picture class="col-md-4 offset-md-1">
+            <source
+              srcset="./assets/img/backgrounds/podcast_cover.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/backgrounds/podcast_cover.webp"
+              type="image/webp"
+            />
+            <img
+              class="img-fluid benefists__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/backgrounds/podcast_cover.png"
+              alt="imagenes podcast"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="statistics container-xl py-4">
+      <h2 class="statistics__heading">Estadísticas de tu podcast detalladas</h2>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil
+        consequuntur dicta, autem veniam magnam, nesciunt quidem soluta placeat
+        doloribus labore quaerat vitae veniam, ex harum! Quia, minus.
+      </p>
+      <picture class="mt-2">
+        <img
+          class="statistics__img img-fluid"
+          loading="lazy"
+          width="500"
+          height="300"
+          src="./assets/img/grafica.svg"
+          alt="Imagen Estadísticas"
+        />
+      </picture>
+    </section>
+    <section class="plans bg-secondary py-4">
+      <div class="container-xl">
+        <h2 class="plans__heading">
+          Nuestros planes y precios para tus podcasts de audio
+        </h2>
+        <p class="pt-1 text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+          temporibus reiciendis, molestias laboriosam, exercitationem tempora
+          harum incidunt recusandae inventore sed ratione possimus molestiae hic
+          deleniti fugiat. Molestiae rerum adipisci amet?
+        </p>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-10">
+            <div class="row plans__cards">
+              <div
+                class="plan-card plan-card--inicio col-md-4 order-2 bg-white"
+              >
+                <h3 class="plan-card__name text-center">Inicio</h3>
+                <p class="plan-card__price mt-1 text-center">
+                  $79.00 MXN / Mes
+                </p>
+
+                <ul class="plan-card__list list-unstyled">
+                  <li class="plan-card__list-item text-center mb-2">
+                    30 Episodios
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    Estadísticas
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    App de grabación
+                  </li>
+                </ul>
+
+                <a href="#" class="btn plan-card__btn">Suscribírme</a>
+              </div>
+              <div
+                class="plan-card plan-card--negocio col-md-4 order-1 order-md-2 bg-primary"
+              >
+                <h3 class="plan-card__name text-center">Negocio</h3>
+                <p class="plan-card__price mt-1 text-center">
+                  $129.00 MXN / Mes
+                </p>
+
+                <ul class="plan-card__list list-unstyled">
+                  <li class="plan-card__list-item text-center mb-2">
+                    Episodios ilimitados
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    Estadísticas
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    Todas las plataformas
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    App de grabación
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    Podcasts pagados
+                  </li>
+                </ul>
+
+                <a href="#" class="btn plan-card__btn plan-card__btn--negocio">
+                  Suscribírme
+                </a>
+              </div>
+              <div class="plan-card plan-card--pro col-md-4 order-3 bg-white">
+                <h3 class="plan-card__name text-center">Pro</h3>
+                <p class="plan-card__price mt-1 text-center">
+                  $99.00 MXN / Mes
+                </p>
+
+                <ul class="plan-card__list list-unstyled">
+                  <li class="plan-card__list-item text-center mb-2">
+                    50 Episodios
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    Estadísticas
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    Todas las plataformas
+                  </li>
+                  <li class="plan-card__list-item text-center mb-2">
+                    App de grabación
+                  </li>
+                </ul>
+
+                <a href="#" class="btn plan-card__btn">Suscribírme</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials py-4 container-xl">
+      <div class="row align-items-center">
+        <picture class="col-md-4">
+          <source srcset="./assets/img/app.avif" type="image/avif" />
+          <source srcset="./assets/img/app.webp" type="image/webp" />
+          <img
+            class="img-fluid w-75 d-block mx-auto"
+            loading="lazy"
+            width="500"
+            height="300"
+            src="./assets/img/app.jpg"
+            alt="imagen app"
+          />
+        </picture>
+        <div class="col-md-8">
+          <h2 class="testimonials__heading">¿Qué opinan de PodcastApp?</h2>
+          <div class="row mt-3">
+            <div class="col-md-6 offset-md-2 mb-2">
+              <div class="testimonial-card bg-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda laudantium iusto aliquid nam non cupiditate, deleniti
+                illo sapiente aut repellat vitae dolorum fugiat quas quidem
+                veritatis esse laborum, earum culpa.
+              </div>
+            </div>
+            <div class="col-md-6 offset-md-4 mb-2">
+              <div class="testimonial-card bg-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda laudantium iusto aliquid nam non cupiditate, deleniti
+                illo sapiente aut repellat vitae dolorum fugiat quas quidem
+                veritatis esse laborum, earum culpa.
+              </div>
+            </div>
+            <div class="col-md-6 offset-md-6 mb-2">
+              <div class="testimonial-card bg-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda laudantium iusto aliquid nam non cupiditate, deleniti
+                illo sapiente aut repellat vitae dolorum fugiat quas quidem
+                veritatis esse laborum, earum culpa.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__row">
+          <div class="footer__widget">
+            <a href="index.html" class="logo">
+              <img
+                class="logo__img"
+                src="./assets/img/icons/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <div class="footer__widget">
+            <h3 class="footer__heading">Soporte</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-nav__link">Documentación</a>
+              <a href="#" class="footer-nav__link">Precios</a>
+              <a href="#" class="footer-nav__link">API</a>
+            </nav>
+          </div>
+          <div class="footer__widget">
+            <h3 class="footer__heading">Soluciones</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-nav__link">Soluciones</a>
+              <a href="#" class="footer-nav__link">Gráficas</a>
+              <a href="#" class="footer-nav__link">Distribución</a>
+            </nav>
+          </div>
+          <div class="footer__widget">
+            <h3 class="footer__heading">Contacto</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-nav__link">Contacto</a>
+              <a href="#" class="footer-nav__link">FAQ</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copy">
+        &copy; 2022 PodcastApp. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>

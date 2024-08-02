@@ -1,0 +1,14 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.benefists {
+  &__heading {
+    @include mix.headingBorder($secondary, $white);
+  }
+
+  &__img {
+    @include mix.hover(transform, 0.3s, ease-in-out) {
+      transform: rotate(8deg) scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "config/variables" as var;
+
+// Colors
+$primary: var.$primary-color;
+$secondary: var.$secondary-color;
+
+// Tipografia
+$headings-font-family: var.$primary-font;
+$headings-font-weight: 700;
+$font-family-sans-serif: var.$primary-font;
+
+// Espaciados
+$spacer: 5rem;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

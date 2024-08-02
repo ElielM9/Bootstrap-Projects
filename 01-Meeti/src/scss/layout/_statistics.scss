@@ -1,0 +1,8 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.statistics {
+  &__heading {
+    @include mix.headingBorder($secondary, $primary);
+  }
+}

@@ -1,0 +1,53 @@
+@use "vendors/bootstrap" as *;
+
+.footer {
+  background-color: $secondary;
+  color: $white;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
+  &__container {
+    @include make-container;
+    max-width: map-get($map: $container-max-widths, $key: xl);
+  }
+
+  &__row {
+    padding: 5rem 0;
+    @include make-row;
+  }
+
+  &__widget {
+    @include make-col-ready;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(3);
+    }
+  }
+
+  .logo__img {
+    margin: 0 auto 3rem;
+    max-width: 15rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    margin-top: 0;
+    color: $primary;
+  }
+
+  &__copy {
+    margin-bottom: 0;
+    border-top: 0.2rem solid $primary;
+    padding: 2rem;
+    text-align: center;
+    @include make-container;
+    max-width: map-get($map: $container-max-widths, $key: xl);
+  }
+}
