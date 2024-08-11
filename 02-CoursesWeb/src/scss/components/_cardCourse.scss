@@ -1,0 +1,29 @@
+@use "vendors/bootstrap" as *;
+
+.card {
+  &-title {
+    font-family: $font-texts;
+  }
+
+  &-text {
+    margin: 0;
+  }
+
+  &-text,
+  &-total {
+    font-size: 1.5rem;
+  }
+
+  &-calif {
+    width: 6rem;
+  }
+
+  &-price {
+    font-size: 1.6rem;
+
+    span{
+        display: block;
+        text-decoration: line-through;
+    }
+  }
+}

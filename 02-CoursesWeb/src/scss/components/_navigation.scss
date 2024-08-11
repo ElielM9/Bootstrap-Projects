@@ -1,0 +1,7 @@
+@use "vendors/bootstrap" as *;
+
+.nav{
+    .active{
+        color: $success;
+    }
+}

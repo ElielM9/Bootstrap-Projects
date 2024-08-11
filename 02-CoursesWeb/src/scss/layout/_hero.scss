@@ -1,0 +1,13 @@
+@use "vendors/bootstrap" as *;
+
+.hero {
+  &__text {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: -2rem;
+    }
+  }
+
+  &__search {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,40 @@
+@use "config/variables" as var;
+
+// Fonts
+$headings-font-family: var.$primary-font;
+$headings-font-weight: 700;
+$font-texts: var.$secondary-font;
+
+// Colors
+$success: var.$primary-color;
+$secondary: var.$secondary-color;
+$light: var.$lightGray;
+$dark: var.$black;
+$darkGray: var.$darkGray;
+
+// Forms
+$input-border-color: $dark;
+$input-border-radius: 1rem;
+
+// Links
+$nav-link-color: $darkGray;
+$nav-link-hover-color: $success;
+$nav-link-font-weight: 700;
+$nav-link-font-size: 2rem;
+
+// Buttons
+$btn-border-radius: 1rem;
+$btn-font-weight: 700;
+
+// Cards
+$card-spacer-x: 0; 
+$card-border-radius: 0;
+$card-border-width: 0;
+$card-border-color: transparent;
+
+// Grid
+$enable-cssgrid: true; 
+
+
+// Import bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
