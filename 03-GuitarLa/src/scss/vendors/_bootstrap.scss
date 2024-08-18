@@ -1,0 +1,39 @@
+@use "config/variables" as var;
+
+// Colors
+$primary: var.$primary-color;
+$white: var.$white;
+$black: var.$black;
+
+// Fonts
+$headings-font-family: var.$primary-font;
+$font-family-base: var.$primary-font;
+
+$headings-font-weight: 900;
+$headings-color: $primary;
+
+// Buttons
+$btn-font-weight: 900;
+
+// Links
+$link-color: $white;
+$link-decoration: none;
+$link-hover-color: $primary;
+
+// Cards
+$card-border-radius: 0;
+$card-border-width: 0;
+
+// Inputs
+$input-border-radius: 1rem;
+$input-border-color: $black;
+
+.text-primary {
+  color: $primary;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

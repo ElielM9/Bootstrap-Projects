@@ -1,0 +1,9 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.courses {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  border-block: .5rem solid $primary;
+  @include mix.bgImage("cursos_bg.jpg");
+}

@@ -1,0 +1,19 @@
+@use "vendors/bootstrap" as *;
+@use "config/mixins" as mix;
+
+.header {
+  @include mix.bgImage("header.jpg");
+  position: relative;
+
+  &__guitar {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      animation: 1s ease-in-out 0s 1 showImage;
+    }
+  }
+}

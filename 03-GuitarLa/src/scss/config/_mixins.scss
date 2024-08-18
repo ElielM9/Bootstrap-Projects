@@ -1,0 +1,12 @@
+
+
+@mixin bgImage($url) {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.7),
+      rgb(0 0 0 / 0.7)
+    ),
+    url("../assets/img/backgrounds/#{$url}");
+  background-position: 50%;
+  background-size: cover;
+}
